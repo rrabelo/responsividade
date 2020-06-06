@@ -1,0 +1,44 @@
+.container {
+    width: calc(100% - 10px);
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.cabecalho {
+    width: 100%;
+    height: 40px;
+    background: green;
+}
+
+.card {
+    width: 100px;
+    height: 60px;
+    border: 1 px solid #000;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 60px;
+}
+
+@media (max-width: 370 px) {
+    .container {
+        display: block;
+    }
+    .card{
+        margin: 5px 0;
+        color: red;
+    }
+    .cabecalho{
+        display: none;
+    }
+
+}
+
+@media (min-width: 371px) and (max-width: 500px) {
+    .cabecalho {
+        background: red;
+    }
+
+}
+
